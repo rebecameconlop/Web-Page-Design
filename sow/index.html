@@ -5,9 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/index.css">
     <link rel="stylesheet" href="../assets/css/sow.css">
-    <title>Document</title>
+    <title>REBECA MELCÓN - Práctica 1 - Informe de Análisis de Sitios Web Sobresalientes</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
-    <p>Hello World!</p>
+  <header class="navbar">
+    <div class="logo">INERTIA</div>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#">Tracing Art</a>
+      <a href="#">Savor</a>
+      <a href="#">Inertia Studios</a>
+      <a href="#">Palmer</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
+      <i class="fas fa-bars"></i>
+      <i class="fas fa-times"></i>
+    </button>
+  </header>
+
+  <main class="content">
+    <section class="intro">
+      <p class="subtitle">Inside the mind<br>of a studio</p>
+      <h1>Exploring the craft, thinking,<br>and impact of design</h1>
+    </section>
+
+    <section class="grid">
+  
+        <a href="tracing-art.html" class="card-link">
+            <article class="card">
+            <img src="../assets/img-sow/Awwwards-Getty-1.png" alt="Tracing Art">
+            <h3>Tracing Art</h3>
+            <p>The essence of visual storytelling through motion and silence.</p>
+            </article>
+        </a>
+
+        <a href="savor.html" class="card-link">
+            <article class="card">
+            <img src="../assets/img-sow/Awwwards-savor-1.png" alt="Savor">
+            <h3>Savor</h3>
+            <p>Where texture meets emotion. A sensory approach to design.</p>
+            </article>
+        </a>
+
+        <a href="inertia.html" class="card-link">
+            <article class="card">
+            <img src="../assets/img-sow/Awwwards-inertia-1.png" alt="Inertia Studios">
+            <h3>Inertia Studios</h3>
+            <p>Redefining creative balance between form, space and light.</p>
+            </article>
+        </a>
+
+        <a href="palmer.html" class="card-link">
+            <article class="card">
+            <img src="../assets/img-sow/Awwwards-palmer-1.png" alt="Palmer">
+            <h3>Palmer</h3>
+            <p>Minimalism reimagined: thoughtful structure and modern calm.</p>
+            </article>
+        </a>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>
+      <strong>Rebeca Melcón López</strong> — Práctica 1: <em>Informe de Análisis de Sitios Web Sobresalientes</em><br>
+      UDIT · 2025/2026 · Grupo 4.3 · Grado en Diseño Multimedia y Gráfico
+    </p>
+</footer>
+
+<script>
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.getElementById('navLinks');
+    const bars = menuBtn.querySelector('.fa-bars');
+    const close = menuBtn.querySelector('.fa-times');
+
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      bars.classList.toggle('hidden');
+      close.classList.toggle('visible');
+    });
+</script>
+
 </body>
+
 </html>
