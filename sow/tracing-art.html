@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/sow.css">
+    <title>Tracing Art - Rebeca Melcón</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo"><a href="index.html">REBECA MELCÓN</a></div>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="tracing-art.html">Tracing Art</a>
+            <a href="savor.html">Savor</a>
+            <a href="inertia.html">Inertia Studios</a>
+            <a href="palmer.html">Palmer</a>
+        </nav>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </button>
+  </header>
+
+  <main class="project-page">
+        <section class="project-header">
+            <div class="project-number">01/04</div>
+
+            <div class="project-info">
+                <div class="info-block">
+                    <h4>Services</h4>
+                    <p>Conceptual Art Practice<br>Mixed Media Exploration<br>Spatial Installation<br>Material Research</p>
+                </div>
+
+                <div class="info-block">
+                    <h4>Industry</h4>
+                    <p>Contemporary Art & Installation</p>
+                </div>
+
+                <div class="info-block">
+                <h4>Location</h4>
+                <p>Rotterdam, Netherlands</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-content">
+            <div class="text-columns">
+                <h1>Análisis:<br>Tracing Art</h1>
+
+                <div class="description">
+                 <p>
+                    Tracing Art, del Getty Research Institute y Resn, representa un ejemplo de excelencia en la comunicación cultural digital. Su diseño transmite calma, prestigio y rigor académico, con una navegación lineal que sustituye los menús tradicionales por un flujo narrativo inmersivo. La paleta neutra, la tipografía serif y las animaciones sutiles crean una atmósfera contemplativa y coherente.
+                </p>
+                <p>
+                    Técnicamente, el sitio combina frameworks modernos y animaciones optimizadas que mantienen fluidez sin sacrificar claridad ni semántica. Aunque la navegación lineal limita la exploración libre, la decisión se justifica por su intención museográfica y su enfoque en la experiencia reflexiva. Cada elemento visual está diseñado con propósito comunicativo y equilibrio formal.
+                </p>
+            </div>
+
+            <!-- ===== EMBEDDED SITE (iframe) ===== -->
+            <div class="iframe-banner">
+                    <iframe src="https://www.getty.edu/tracingart/" title="Sitio Awwwards" width="100%" height="400" loading="lazy" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- ===== NEW SECTION: Visual Exploration ===== -->
+        <section class="visual-exploration">
+            <div class="visual-header">
+                <div class="visual-images">
+                    <img src="../assets/img-sow/Awwwards-Getty-1.png" alt="Visual Scene 1">
+                    <img src="../assets/img-sow/Awwwards-Getty-2.png" alt="Visual Scene 2">
+                    <img src="../assets/img-sow/Awwwards-Getty-3.png" alt="Visual Scene 3">
+                </div>
+            </div>
+
+            <div class="visual-text">
+                <h2>Conclusión</h2>
+                <p>
+                Más allá de lo estético, el sitio transmite una cultura basada en el acceso intelectual al arte. Su diseño invita a la contemplación, aunque puede excluir a usuarios que prefieran estructuras más dinámicas. Los efectos están justificados técnica y conceptualmente, equilibrando creatividad y funcionalidad. Como mejora, podría ampliarse su adaptabilidad para distintos públicos y dispositivos.
+                </p>
+
+                <div class="visual-tags">
+                    <span>Arte & Ilustración</span>
+                    <span>Colorida</span>
+                    <span>Limpia</span>
+                    <span>Scrolling</span>
+                    <span>Animaciones sutiles</span>
+                    <span>Background Impactante</span>
+                </div>
+            </div>
+        </section>
+
+  </main>
+
+   <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+        <p>
+        <strong>Rebeca Melcón López</strong> — Práctica 1: 
+        <em>Informe de Análisis de Sitios Web Sobresalientes</em><br>
+        UDIT · 2025/2026 · Grupo 4.3 · Grado en Diseño Multimedia y Gráfico
+        </p>
+  </footer>
+
+  <!-- ===== SCRIPT DEL MENÚ ===== -->
+  <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const navLinks = document.getElementById('navLinks');
+        const bars = menuBtn.querySelector('.fa-bars');
+        const close = menuBtn.querySelector('.fa-times');
+
+        menuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+        bars.classList.toggle('hidden');
+        close.classList.toggle('visible');
+        });
+  </script>
+
+</body>
+
+</html>

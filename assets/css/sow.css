@@ -1,23 +1,3 @@
-/* ================= RESET ================= */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* ================= BASE ================= */
-body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  background-color: #0a0a0a;
-  color: #f5f5f5;
-  line-height: 1.5;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  overflow-x: hidden;
-  animation: fadeIn 1s ease forwards;
-}
-
 /* ================= NAVBAR ================= */
 .navbar {
   position: sticky;
@@ -32,8 +12,8 @@ body {
   animation: slideDown 0.8s ease forwards;
 }
 
-.logo {
-  font-weight: 600;
+.logo a {
+  font-weight: 500;
   font-size: 1.2rem;
   letter-spacing: 0.05em;
   color: #fff;
@@ -45,14 +25,7 @@ body {
 }
 
 .nav-links a {
-  text-decoration: none;
-  color: #f5f5f5;
   font-size: 0.95rem;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: #b1b1b1;
 }
 
 /* ================= BOTÓN HAMBURGUESA ================= */
@@ -118,9 +91,9 @@ body {
 }
 
 .intro h1 {
-    display: flex;
-    justify-content: flex-end;
-    text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
   font-size: 2.4rem;
   font-weight: 600;
   width: 65%;
@@ -135,11 +108,15 @@ body {
   gap: 2.5rem;
 }
 
+.card-link {
+  display: block;
+  text-decoration: none;
+}
+
 .card {
-  /* background: rgba(40,40,40,0.7); */
   border-radius: 8px;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.5s ease;
   backdrop-filter: blur(8px);
 }
 
@@ -168,30 +145,191 @@ body {
   margin: 0 1rem 1.2rem;
 }
 
-/* Card links */
-.card-link {
-  display: block;
-  text-decoration: none;
-}
-
-/* Animación al pasar el ratón */
-.card {
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.5s ease;
-  backdrop-filter: blur(8px);
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-}
-
 /* Animación de "salida" al hacer clic */
 .card-link:active .card {
   transform: scale(0.95) translateY(10px);
   opacity: 0;
   transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* ================= PROJECT PAGE ================= */
+.project-page {
+  padding: 4rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #f5f5f5;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+/* ================= HEADER ================= */
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+  color: #d9d9d9;
+}
+
+.project-number {
+  font-size: 2.5rem;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.project-info {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.info-block h4 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #aaa;
+  margin-bottom: 0.3rem;
+}
+
+.info-block p {
+  font-size: 0.9rem;
+  color: #eee;
+  line-height: 1.5;
+}
+
+/* ================= CONTENT ================= */
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.text-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.text-columns h1 {
+  flex: 1 1 40%;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.3;
+}
+
+.description {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.description p {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.7;
+}
+
+/* ================= IFRAME BANNER ================= */
+.iframe-banner {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 8px;
+  animation: fadeIn 1.2s ease forwards;
+  position: relative;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.iframe-banner iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+  backdrop-filter: blur(3px);
+  transition: transform 0.5s ease;
+}
+
+.iframe-banner:hover iframe {
+  transform: scale(1.02);
+}
+
+/* ================= VISUAL EXPLORATION SECTION ================= */
+.visual-exploration {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin: 5rem auto;
+  width: 88%;
+  max-width: 1280px;
+  opacity: 0;
+  animation: fadeIn 1s ease 0.3s forwards;
+}
+
+/* Imagenes en horizontal */
+.visual-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.visual-images img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background: #1a1a1a;
+}
+
+.visual-images img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* Texto */
+.visual-text {
+  color: #f5f5f5;
+  max-width: 800px;
+}
+
+.visual-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.visual-text p {
+  color: #ccc;
+  margin-bottom: 1rem;
+  font-size: 0.97rem;
+  line-height: 1.6;
+}
+
+/* Tags circulares */
+.visual-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.visual-tags span {
+  padding: 0.4rem 1rem;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #eee;
+  transition: background 0.3s ease, color 0.3s ease;
+  backdrop-filter: blur(6px);
+}
+
+.visual-tags span:hover {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
 }
 
 /* ================= FOOTER ================= */
@@ -214,6 +352,8 @@ body {
   font-style: normal;
   color: #ccc;
 }
+
+
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 1024px) {
@@ -258,14 +398,53 @@ body {
     display: flex;
   }
 }
+@media (max-width: 900px) {
+  .text-columns {
+    flex-direction: column;
+  }
 
-/* ================= ANIMACIONES ================= */
-@keyframes fadeIn {
-  0% { opacity: 0; transform: translateY(15px); }
-  100% { opacity: 1; transform: translateY(0); }
+  .text-columns h1 {
+    font-size: 1.8rem;
+  }
+
+  .project-info {
+    gap: 1.5rem;
+  }
+
+  .info-block p {
+    font-size: 0.85rem;
+  }
+
+  .iframe-banner {
+    height: 300px;
+  }
 }
 
-@keyframes slideDown {
-  0% { opacity: 0; transform: translateY(-20px); }
-  100% { opacity: 1; transform: translateY(0); }
+@media (max-width: 600px) {
+  .project-number {
+    font-size: 1.8rem;
+  }
+
+  .text-columns h1 {
+    font-size: 1.6rem;
+  }
+
+  .description p {
+    font-size: 0.9rem;
+  }
+
+  .iframe-banner {
+    height: 240px;
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .visual-images {
+    grid-template-columns: 1fr;
+  }
+
+  .visual-text h2 {
+    font-size: 1.6rem;
+  }
 }

@@ -12,13 +12,13 @@
 </head>
 <body>
   <header class="navbar">
-    <div class="logo">INERTIA</div>
+    <div class="logo"><a href="index.html">REBECA MELCÓN</a></div>
 
     <nav class="nav-links" id="navLinks">
-      <a href="#">Tracing Art</a>
-      <a href="#">Savor</a>
-      <a href="#">Inertia Studios</a>
-      <a href="#">Palmer</a>
+      <a href="tracing-art.html">Tracing Art</a>
+      <a href="savor.html">Savor</a>
+      <a href="inertia.html">Inertia Studios</a>
+      <a href="palmer.html">Palmer</a>
     </nav>
 
     <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
@@ -29,66 +29,64 @@
 
   <main class="content">
     <section class="intro">
-      <p class="subtitle">Inside the mind<br>of a studio</p>
-      <h1>Exploring the craft, thinking,<br>and impact of design</h1>
+      <p class="subtitle">Maquetación Web<br>con Hojas de Estilo</p>
+      <h1>Informe de Análisis<br>de Sitios Web Sobresalientes</h1>
     </section>
 
     <section class="grid">
-  
-        <a href="tracing-art.html" class="card-link">
-            <article class="card">
-            <img src="../assets/img-sow/Awwwards-Getty-1.png" alt="Tracing Art">
-            <h3>Tracing Art</h3>
-            <p>The essence of visual storytelling through motion and silence.</p>
-            </article>
-        </a>
+      <a href="tracing-art.html" class="card-link">
+          <article class="card">
+          <img src="../assets/img-sow/Awwwards-Getty-1.png" alt="Tracing Art">
+          <h3>Tracing Art</h3>
+          <p>The essence of visual storytelling through motion and silence.</p>
+          </article>
+      </a>
 
-        <a href="savor.html" class="card-link">
-            <article class="card">
-            <img src="../assets/img-sow/Awwwards-savor-1.png" alt="Savor">
-            <h3>Savor</h3>
-            <p>Where texture meets emotion. A sensory approach to design.</p>
-            </article>
-        </a>
+      <a href="savor.html" class="card-link">
+          <article class="card">
+          <img src="../assets/img-sow/Awwwards-savor-1.png" alt="Savor">
+          <h3>Savor</h3>
+          <p>Where texture meets emotion. A sensory approach to design.</p>
+          </article>
+      </a>
 
-        <a href="inertia.html" class="card-link">
-            <article class="card">
-            <img src="../assets/img-sow/Awwwards-inertia-1.png" alt="Inertia Studios">
-            <h3>Inertia Studios</h3>
-            <p>Redefining creative balance between form, space and light.</p>
-            </article>
-        </a>
+      <a href="inertia.html" class="card-link">
+        <article class="card">
+          <img src="../assets/img-sow/Awwwards-inertia-1.png" alt="Inertia Studios">
+          <h3>Inertia Studios</h3>
+          <p>Redefining creative balance between form, space and light.</p>
+        </article>
+      </a>
 
-        <a href="palmer.html" class="card-link">
-            <article class="card">
-            <img src="../assets/img-sow/Awwwards-palmer-1.png" alt="Palmer">
+      <a href="palmer.html" class="card-link">
+        <article class="card">
+          <img src="../assets/img-sow/Awwwards-palmer-1.png" alt="Palmer">
             <h3>Palmer</h3>
             <p>Minimalism reimagined: thoughtful structure and modern calm.</p>
             </article>
-        </a>
+      </a>
     </section>
+  </main>
 
-</main>
+  <footer class="footer">
+      <p>
+        <strong>Rebeca Melcón López</strong> — Práctica 1: <em>Informe de Análisis de Sitios Web Sobresalientes</em><br>
+        UDIT · 2025/2026 · Grupo 4.3 · Grado en Diseño Multimedia y Gráfico
+      </p>
+  </footer>
 
-<footer class="footer">
-    <p>
-      <strong>Rebeca Melcón López</strong> — Práctica 1: <em>Informe de Análisis de Sitios Web Sobresalientes</em><br>
-      UDIT · 2025/2026 · Grupo 4.3 · Grado en Diseño Multimedia y Gráfico
-    </p>
-</footer>
+  <script>
+      const menuBtn = document.getElementById('menuBtn');
+      const navLinks = document.getElementById('navLinks');
+      const bars = menuBtn.querySelector('.fa-bars');
+      const close = menuBtn.querySelector('.fa-times');
 
-<script>
-    const menuBtn = document.getElementById('menuBtn');
-    const navLinks = document.getElementById('navLinks');
-    const bars = menuBtn.querySelector('.fa-bars');
-    const close = menuBtn.querySelector('.fa-times');
-
-    menuBtn.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
-      bars.classList.toggle('hidden');
-      close.classList.toggle('visible');
-    });
-</script>
+      menuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+        bars.classList.toggle('hidden');
+        close.classList.toggle('visible');
+      });
+  </script>
 
 </body>
 

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/sow.css">
+    <title>Savor - Rebeca Melcón</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo"><a href="index.html">REBECA MELCÓN</a></div>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="tracing-art.html">Tracing Art</a>
+            <a href="savor.html">Savor</a>
+            <a href="inertia.html">Inertia Studios</a>
+            <a href="palmer.html">Palmer</a>
+        </nav>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </button>
+  </header>
+
+  <main class="project-page">
+        <section class="project-header">
+            <div class="project-number">02/04</div>
+
+            <div class="project-info">
+                <div class="info-block">
+                    <h4>Services</h4>
+                    <p>Conceptual Art Practice<br>Mixed Media Exploration<br>Spatial Installation<br>Material Research</p>
+                </div>
+
+                <div class="info-block">
+                    <h4>Industry</h4>
+                    <p>Contemporary Art & Installation</p>
+                </div>
+
+                <div class="info-block">
+                <h4>Location</h4>
+                <p>Rotterdam, Netherlands</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-content">
+            <div class="text-columns">
+                <h1>Análisis:<br>Savor</h1>
+
+                <div class="description">
+                 <p>
+                    Savor.it busca expresar sostenibilidad y minimalismo mediante una estética limpia y tipografía sans-serif. Su primera impresión es elegante y ordenada, pero los errores de carga y la falta de jerarquía visual interrumpen la experiencia. La ausencia de microinteracciones y la escasa narrativa sensorial debilitan el vínculo emocional con el usuario.
+                </p>
+                <p>
+                    Desde lo técnico, el sitio presenta deficiencias en accesibilidad, semántica y rendimiento general. Aunque su discurso visual coincide con los valores sostenibles que promueve, la ejecución carece del rigor necesario para generar credibilidad. Su minimalismo se convierte en un límite cuando no se acompaña de estructura sólida y control visual.
+                </p>
+            </div>
+
+            <!-- ===== EMBEDDED SITE (iframe) ===== -->
+            <div class="iframe-banner">
+                    <iframe src="https://savor.it/" title="Sitio Awwwards" width="100%" height="400" loading="lazy" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- ===== NEW SECTION: Visual Exploration ===== -->
+        <section class="visual-exploration">
+            <div class="visual-header">
+                <div class="visual-images">
+                    <img src="../assets/img-sow/Awwwards-savor-1.png" alt="Visual Scene 1">
+                    <img src="../assets/img-sow/Awwwards-savor-2.png" alt="Visual Scene 2">
+                    <img src="../assets/img-sow/Awwwards-savor-3.png" alt="Visual Scene 3">
+                </div>
+            </div>
+
+            <div class="visual-text">
+                <h2>Conclusión</h2>
+                <p>
+                    Críticamente, el proyecto evidencia cómo la estética por sí sola no garantiza una experiencia inclusiva. Su estilo atrae a un público afín al diseño contemporáneo, pero deja fuera a quienes buscan interacción o calidez. No hay efectos injustificados, pero sí una desconexión entre intención y resultado. Reforzar accesibilidad y jerarquía informativa elevaría su coherencia ética y comunicativa.
+                </p>
+
+                <div class="visual-tags">
+                    <span>Comida & Bebida</span>
+                    <span>Scrolling</span>
+                    <span>Storytelling</span>
+                    <span>Orden visual</span>
+                    <span>HTML5</span>
+                    <span>Colorida</span>
+                </div>
+            </div>
+        </section>
+
+  </main>
+
+   <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+        <p>
+        <strong>Rebeca Melcón López</strong> — Práctica 1: 
+        <em>Informe de Análisis de Sitios Web Sobresalientes</em><br>
+        UDIT · 2025/2026 · Grupo 4.3 · Grado en Diseño Multimedia y Gráfico
+        </p>
+  </footer>
+
+  <!-- ===== SCRIPT DEL MENÚ ===== -->
+  <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const navLinks = document.getElementById('navLinks');
+        const bars = menuBtn.querySelector('.fa-bars');
+        const close = menuBtn.querySelector('.fa-times');
+
+        menuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+        bars.classList.toggle('hidden');
+        close.classList.toggle('visible');
+        });
+  </script>
+
+</body>
+
+</html>
